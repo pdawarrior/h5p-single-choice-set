@@ -1,0 +1,134 @@
+{
+  "semantics": [
+    {
+      "label": "Danh mục câu hỏi",
+      "entity": "question",
+      "widgets": [
+        {
+          "label": "Mặc định"
+        },
+        {
+          "label": "Văn bản"
+        }
+      ],
+      "field": {
+        "label": "Câu hỏi & lựa chọn",
+        "fields": [
+          {
+            "label": "Câu hỏi"
+          },
+          {
+            "label": "Lựa chọn - lựa chọn đầu tiên là lựa chọn đúng.",
+            "entity": "answer",
+            "field": {
+              "label": "Lựa chọn"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Phản hồi chung",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Xác định phản hồi tùy chỉnh cho bất kỳ thang điểm nào",
+          "description": "Nhấp vào nút \"Thêm thang điểm\" để thêm bao nhiêu thang điểm bạn cần. Ví dụ: 0-20% Điểm kém, 21-91% Điểm trung bình, 91-100% Điểm tuyệt vời!",
+          "entity": "range",
+          "field": {
+            "fields": [
+              {
+                "label": "Thang điểm"
+              },
+              {},
+              {
+                "label": "Phản hồi cho thang điểm đã được xác định",
+                "placeholder": "Điền vào phản hồi"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "fields": [
+        {
+          "label": "Tự động tiếp tục",
+          "description": "Tự động chuyển sang câu hỏi tiếp theo khi lựa chọn thay thế được chọn"
+        },
+        {
+          "label": "Hết giờ trả lời đúng",
+          "description": "Giá trị tính bằng mili giây"
+        },
+        {
+          "label": "Hết thời gian trả lời sai",
+          "description": "Giá trị tính bằng mili giây"
+        },
+        {
+          "label": "Kích hoạt hiệu ứng âm thanh"
+        },
+        {
+          "label": "Kích hoạt nút thử lại"
+        },
+        {
+          "label": "Cho phép hiển thị nút giải pháp"
+        },
+        {
+          "label": "Tỷ lệ phần trăm đạt",
+          "description": "Tỷ lệ phần trăm của tổng số điểm cần thiết để vượt qua bài kiểm tra."
+        }
+      ]
+    },
+    {
+      "label": "Nội địa hóa bộ câu hỏi lựa chọn duy nhất",
+      "fields": [
+        {
+          "label": "Dán nhãn cho nút \"Tiếp theo\"",
+          "default": "Câu hỏi tiếp theo"
+        },
+        {
+          "label": "Dán nhãn cho nút \"Hiển thị lời giải\"",
+          "default": "Hiển thị lời giải"
+        },
+        {
+          "label": "Dán nhãn cho nút \"Thử lại\"",
+          "default": "Retry"
+        },
+        {
+          "label": "Tiêu đề cho chế độ xem lời giải",
+          "default": "Danh sách lời giải"
+        },
+        {
+          "label": "Văn bản bộ đọc cho câu trả lời đúng",
+          "default": "Đúng!"
+        },
+        {
+          "label": "Văn bản bộ đọc cho câu trả lời sai",
+          "default": "Sai!"
+        },
+        {
+          "label": "Dán nhãn cho nút \"tắt tiếng\", để tắt âm thanh phản hồi",
+          "default": "Tắt âm thanh phản hồi"
+        },
+        {
+          "label": "Dán nhãn cho nút \"Đóng\"",
+          "default": "Đóng"
+        },
+        {
+          "label": "Văn bản số slide",
+          "description": "Thông báo slide hiện tại và tổng số slide, các biến là :num và :total",
+          "default": "Slide :num of :total"
+        },
+        {
+          "label": "Textual representation of the score bar for those using a readspeaker",
+          "default": "Bạn đạt được :num trong tổng số :tổng điểm"
+        }
+      ]
+    }
+  ]
+}
